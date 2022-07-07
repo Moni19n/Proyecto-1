@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="Style.css">
-<title>Inicio de sesión</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>Inicio de sesión</title>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:white; ">
-        <a class="navbar-toggler-icon"  href="Index.html"><img class="logo1" src="Imágenes taller/Logo.jpeg"></a> 
-        
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" 
-        aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <a class="navbar-toggler-icon" href="Index.html"><img class="logo1" src="Imágenes taller/Logo.jpeg"></a>
+
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="Contactenos.html">Contáctenos</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" 
-                    aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                         <a class="dropdown-item" href="#">Action 1</a>
                         <a class="dropdown-item" href="#">Action 2</a>
@@ -38,14 +39,125 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
-                <a class="linksesion" href="Inicio-Sesion.html" >Iniciar sesión</a>
+                <a class="linksesion" href="Inicio-Sesion.html">Iniciar sesión</a>
             </form>
         </div>
     </nav>
 
-<script src="Main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <section id="">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="info-left">
+                        <img src="Imágenes taller/Logo.jpeg" style="width:100% ;">
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="info-right">
+
+                        <form>
+                            <fieldset>
+
+                                <legend> Bienvenido</legend>
+                                <p>Con el fin de garantizarle una excelente atención, por favor ingrese a su cuenta de
+                                    usuario para agendar su cita</p>
+                                <br>
+                                <input class="form-control" type="text" placeholder="Nombre de usuario"> <br> <br>
+                                <input class="form-control" type="email" placeholder="Correo electrónico" required> <br>
+                                <br>
+                                <input class="form-control" type="password" placeholder="Clave de acceso" required> <br>
+                                <br>
+                                <button type="button" class="btn btn-danger">Iniciar sesión </button> 
+                                <a class=" breadcrumb-item" href="#">¿Olvidó su clave de acceso?</a> <br><br>
+                                <p class="finalI">&copy;TallerJYJ Todos los derechos reservados</p>
+
+                            </fieldset>
+
+
+
+
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <div class="end bg-danger ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p> Taller JYJ 2022. Santa Bárbara, Heredia. Teléfono:8843-8986.
+                            Correo:<email><a class="correo" href=" ">tallerjyj@gmail.com</a></email> &copy;mnuñez </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </footer>
+
+        <script src="Main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script>
+
+            $(document).ready(function () {
+
+                $("#mostrar").click(function (e) {
+                    e.preventDefault();
+                    $(".jk").toggle();
+
+                });
+
+                $("#mostrar1").click(function (e) {
+                    e.preventDefault();
+                    $(".scaner1").toggle();
+
+                });
+
+                $("#mostrar2").click(function (e) {
+                    e.preventDefault();
+                    $(".j1").toggle();
+
+                });
+            })
+
+
+            window.sr = new ScrollReveal();
+
+
+            sr.reveal('.navbar', {
+                duration: 2000,
+                origin: 'top',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+
+
+            sr.reveal('footer', {
+                duration: 2000,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+
+
+        </script>
+
+
+
+
+
 </body>
+
 </html>

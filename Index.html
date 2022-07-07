@@ -26,7 +26,7 @@
                     <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="Contactenos.html">Contáctenos</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
@@ -44,14 +44,40 @@
         </div>
     </nav>
 
+
+
     <!--Sección 1-->
-    <div class="jumbotron">
+    <div class="jumbotron cita1">
         <h1 class="display-4">Agende su cita</h1>
         <p class="lead">Coordine su cita: Sábados y domingos 8am-5pm</p>
         <hr class="my-3">
-        <button class="btn btn-outline-dark my-2 my-sm-0 " type="submit">Consulta Api</button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+            Consulta Api
+          </button>
     </div>
 
+      
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title conslt1">Consulta Api</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Sección 2-->
 
@@ -107,12 +133,13 @@
 
 
     <footer>
-        <div class="end">
+        <div class="end bg-danger ">
             <div class="row">
               <div class="col-md-12">
-                <p> Taller JYJ 2022. Santa Bárbara, Heredia. Teléfono:8843-8986. Correo:<email>tallerjyj@gmail.com</email> </p>
-    <p>&copy;mnuñez</p>
-              
+                <p> Taller JYJ 2022. Santa Bárbara, Heredia. Teléfono:8843-8986. Correo:<email><a class="correo" href=" ">tallerjyj@gmail.com</a>
+                    &copy;mnuñez </p>
+   
+              </div>
             </div>
       
           </div>
@@ -124,7 +151,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  
 
+       
 
     <script>
 
@@ -150,6 +180,40 @@
         })
 
 
+    window.sr = new ScrollReveal();
+    
+    sr.reveal('.cita1', {
+      duration: 3000,
+      origin: 'left'
+    });
+
+       sr.reveal('.conslt1', {
+      duration: 5000,
+      origin: 'left',
+      distance: '400px'
+    });
+
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin: 'top',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
+    sr.reveal('.container', {
+      duration: 2000,
+      delay: 1000,
+      distance: '400px',
+      origin: 'right'
+    });
+
+    sr.reveal('footer', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+   
 
     </script>
 </body>

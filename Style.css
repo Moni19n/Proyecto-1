@@ -37,7 +37,17 @@ color: grey
 }
 
 footer {
-    background-color: red;
-    text-align: center;
+      text-align: center;
     color:whitesmoke
+}
+
+
+.correo {
+    color:whitesmoke
+
+}
+
+.finalI{
+font-size: x-small;
+
 }
