@@ -1,5 +1,43 @@
-#logo1 {
-    width: 9%;
-    height: 9%;
+.logo1 {
+    width: 130%;
+    height: 130%;
+    display: flex;
+}
 
+.linksesion{
+color: grey
+}
+
+#jk{
+    width: 110px;
+    height: 110px;
+}
+
+#scaner{
+    width: 110px;
+    height: 110px;
+}
+
+#j1{
+    width: 110px;
+    height: 110px;
+    
+}
+
+
+.jk {
+    margin: 15px;
+}
+
+.scaner1 {
+    margin: 15px;
+}
+.j1{
+    margin: 15px;
+}
+
+footer {
+    background-color: red;
+    text-align: center;
+    color:whitesmoke
 }

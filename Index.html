@@ -1,59 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="Style.css">
-<title>Taller JYJ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>Taller JYJ</title>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color:light;">
-    <img id="logo1" class="navbar-brand" alt="Logo" src="Imágenes taller/Logo.jpeg">
-    
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-        aria-expanded="false" aria-label="Toggle navigation"></button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="#">Action 1</a>
-                    <a class="dropdown-item" href="#">Action 2</a>
-                </div>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
-            <button class="btn btn-outline-dark my-2 my-sm-0 " type="submit">Iniciar sesión</button>
-        </form>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:white; ">
+        <a class="navbar-toggler-icon" href="Index.html"><img class="logo1" src="Imágenes taller/Logo.jpeg"></a>
+
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                <a class="linksesion nav-link" href="Inicio-Sesion.html">Iniciar sesión</a>
+            </form>
+        </div>
+    </nav>
+
+    <!--Sección 1-->
+    <div class="jumbotron">
+        <h1 class="display-4">Agende su cita</h1>
+        <p class="lead">Coordine su cita: Sábados y domingos 8am-5pm</p>
+        <hr class="my-3">
+        <button class="btn btn-outline-dark my-2 my-sm-0 " type="submit">Consulta Api</button>
     </div>
-</nav>
-
-<div class="jumbotron">
-    <h1 class="display-4">Consulte por nuestros servicios a domicilio</h1>
-    <p class="lead">Horario de atención: Sábados y domingos 8am-5pm</p>
-    <hr class="my-4">
-    <button class="btn btn-outline-dark my-2 my-sm-0 " type="submit">Consulta Api</button>
-</div>
 
 
+    <!--Sección 2-->
+
+    <div class="container">
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-md-10 col-sm-10">
+                    <div class="container-content-center">
+                        <div class="d-flex justify-content-center">
+
+                            <figure>
+                                <div class="jk" >
+                                    <img id="jk" class="rounded-circle mx-auto d-block "
+                                        src="Imágenes taller/Image 2022-06-28 at 9.39.46 AM.jpeg">
+                                    <figcaption class=" text-center">Diagnósticos<br> generales</figcaption>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-danger " id="mostrar">Mostrar</button>
+                                </div>
+
+                            </figure>
 
 
-<script src="Main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+                            <figure>
+                                <div class="scaner1">
+                                    <img id="scaner" class="rounded-circle mx-auto d-block"
+                                        src="Imágenes taller/925cd026-fa11-41ed-99af-9e45772b7142.jpg">
+                                    <figcaption class=" text-center">Diagnósticos <br> eléctricos</figcaption>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-danger" id="mostrar1">Mostrar</button>
+                                </div>
+                            </figure>
+
+                            <figure>
+                                <div class="j1">
+                                    <img id="j1" class="rounded-circle mx-auto d-block"
+                                        src="Imágenes taller/deb13f51-2fe7-4f8f-b4b8-d7dd74848fe9.jpg">
+                                    <figcaption class=" text-center">Alistado de su <Br> vehículo para RTV</figcaption>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-danger" id="mostrar2">Mostrar</button>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="end">
+            <div class="row">
+              <div class="col-md-12">
+                <p> Taller JYJ 2022. Santa Bárbara, Heredia. Teléfono:8843-8986. Correo:<email>tallerjyj@gmail.com</email> </p>
+    <p>&copy;mnuñez</p>
+              
+            </div>
+      
+          </div>
+
+
+    </footer>
+
+    <script src="Main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#mostrar").click(function (e) {
+                e.preventDefault();
+                $(".jk").toggle();
+
+            });
+
+            $("#mostrar1").click(function (e) {
+                e.preventDefault();
+                $(".scaner1").toggle();
+
+            });
+
+            $("#mostrar2").click(function (e) {
+                e.preventDefault();
+                $(".j1").toggle();
+
+            });
+        })
+
+
+
+    </script>
 </body>
-</html>
